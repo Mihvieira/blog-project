@@ -1,0 +1,41 @@
+.hero {
+  padding: 10px;
+  background-color: var(--cor-light-grey2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+}
+
+.hero .left-card {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .left-card h1 {
+  margin: 10px;
+  justify-items: baseline;
+  font-size: 64px;
+  font-weight: bolder;
+}
+
+.hero .left-card p {
+  margin: 10px;
+  justify-items: baseline;
+  font-size: 20px;
+  font-weight: 100;
+  color: var(--cor-dark-grey);
+}
+
+.hero .right-card {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero .right-card img {
+  max-width: 400px;
+  max-height: 300px;
+}

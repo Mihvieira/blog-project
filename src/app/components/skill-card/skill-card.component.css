@@ -1,0 +1,42 @@
+.mini-cards-menu {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.skill-card {
+  width: 220px;
+  height: 280px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--cor-white);
+  border-radius: 8px;
+}
+
+.skill-card:hover {
+  background-color: var(--cor-blue);
+}
+
+.skill-card a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  padding: 20px;
+}
+
+.skill-card a img {
+  height: 60px;
+  width: 60px;
+}
+
+.skill-card a p {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}

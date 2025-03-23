@@ -1,1 +1,47 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  /* FONT*/
+  --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
+
+  /*COLORS*/
+  --cor-white: #fffffe;
+  --cor-light-grey1: #eff0f3;
+  --cor-light-grey2: #e4e5e9;
+  --cor-grey: #c0c0c0;
+  --cor-dark-grey: #9a9494;
+  --cor-black: #2b2c34;
+  --cor-blue: #6246ea;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  color: var(--cor-black);
+  font-family: var(--font-plus-jakarta);
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.up-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: lighter;
+  margin-left: 10px;
+}
+
+.up-card a {
+  text-decoration: none;
+}
+
+.up-card img {
+  width: 10px;
+}
+
+.down-card {
+  margin: 20px;
+}

@@ -1,0 +1,35 @@
+header {
+  width: 100%;
+  max-height: 86px;
+  display: flex;
+  flex-direction: row;
+  background-color: var(--cor-light-grey1);
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -15px 10px -20px inset;
+}
+
+header ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  width: 70%;
+}
+
+header a {
+  text-decoration: none;
+  margin: 10px;
+}
+
+header .logo {
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--cor-blue);
+}
+
+header ul li {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: lighter;
+}
