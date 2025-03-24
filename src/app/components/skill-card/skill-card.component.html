@@ -2,11 +2,14 @@
   @for (item of items; track item.id) {
   <li class="skill-card">
     <a href="#">
-      <img src="assets/icons/{{item.nome.toLowerCase()}}.svg" alt="{{item.nome}}-logo" />
-      <p>{{item.nome.toLocaleUpperCase()}}</p>
+      <img
+        src="assets/icons/{{ item.nome.toLowerCase() }}.svg"
+        alt="{{ item.nome }}-logo"
+      />
+      <p>{{ item.nome.toLocaleUpperCase() }}</p>
     </a>
   </li>
   } @empty {
-    <li>Not Found</li>
+  <li>Not Found</li>
   }
 </ul>

@@ -1,0 +1,25 @@
+<section class="article-hero">
+  <img src="assets/images/0.png" alt="article-photo" />
+</section>
+<section class="content">
+  <div class="article-content">
+    @if (article) {
+    <div class="data-content">
+      <h1>{{ article.titulo }}</h1>
+      <div class="post-data">
+        <h4>{{ article.autor }}</h4>
+        <p>{{ article.criacao }}</p>
+      </div>
+      <div class="text-content">
+        @for (paragrafo of article.conteudo; track $index) {
+        <p>
+          {{ paragrafo.text }}
+        </p>
+        }
+      </div>
+    </div>
+    } @else {
+    <p>Artigo não encontrado.</p>
+    }
+  </div>
+</section>

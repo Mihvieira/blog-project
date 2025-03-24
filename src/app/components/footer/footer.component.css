@@ -35,7 +35,7 @@ footer .up-card .second{
   margin-right: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: baseline;
 }
 
 footer .up-card .second h2{

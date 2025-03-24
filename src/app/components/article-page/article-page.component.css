@@ -1,0 +1,30 @@
+.article-hero{
+  margin-top: 10px;
+  align-self: center;
+}
+
+.content .data-content{
+  text-align: justify;
+  padding: 20px;
+}
+
+.content .data-content .post-data{
+  flex-direction: row;
+  justify-content: baseline;
+  margin-top: 0px 10px 0px 10px;
+}
+
+.content .data-content .post-data p{
+  margin-left: 10px;
+}
+
+.text-content{
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.text-content p{
+  padding-top: 10px;
+  color: var(--cor-dark-grey);
+}
