@@ -1,8 +1,9 @@
 <ul class="mini-cards-menu">
+  @for (item of items; track item.id) {
   <li class="article-card">
     <a href="#">
       <img class="article-photo" src="assets/images/0.png" alt="artcle-img" />
-      <h3>Título artigo</h3>
+      <h3>{{item.titulo}}</h3>
       <div class="article-data">
         <img
           class="author-image"
@@ -10,61 +11,13 @@
           alt="author-image"
         />
         <div class="post-data">
-          <h4>Nome do autor</h4>
-          <p>data do artigo</p>
+          <h4>{{item.autor}}</h4>
+          <p>{{item.criacao}}</p>
         </div>
       </div>
     </a>
   </li>
-  <li class="article-card">
-    <a href="#">
-      <img class="article-photo" src="assets/images/0.png" alt="artcle-img" />
-      <h3>Título artigo</h3>
-      <div class="article-data">
-        <img
-          class="author-image"
-          src="assets/icons/circle-user-solid.svg"
-          alt="author-image"
-        />
-        <div class="post-data">
-          <h4>Nome do autor</h4>
-          <p>data do artigo</p>
-        </div>
-      </div>
-    </a>
-  </li>
-  <li class="article-card">
-    <a href="#">
-      <img class="article-photo" src="assets/images/0.png" alt="artcle-img" />
-      <h3>Título artigo</h3>
-      <div class="article-data">
-        <img
-          class="author-image"
-          src="assets/icons/circle-user-solid.svg"
-          alt="author-image"
-        />
-        <div class="post-data">
-          <h4>Nome do autor</h4>
-          <p>data do artigo</p>
-        </div>
-      </div>
-    </a>
-  </li>
-  <li class="article-card">
-    <a href="#">
-      <img class="article-photo" src="assets/images/0.png" alt="artcle-img" />
-      <h3>Título artigo</h3>
-      <div class="article-data">
-        <img
-          class="author-image"
-          src="assets/icons/circle-user-solid.svg"
-          alt="author-image"
-        />
-        <div class="post-data">
-          <h4>Nome do autor</h4>
-          <p>data do artigo</p>
-        </div>
-      </div>
-    </a>
-  </li>
+  } @empty {
+    <li>Not Found</li>
+  }
 </ul>

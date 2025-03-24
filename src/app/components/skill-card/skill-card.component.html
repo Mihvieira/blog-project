@@ -1,20 +1,12 @@
 <ul class="mini-cards-menu">
+  @for (item of items; track item.id) {
   <li class="skill-card">
     <a href="#">
-      <img src="assets/icons/css3-alt-brands.svg" alt="css-logo" />
-      <p>CSS</p>
+      <img src="assets/icons/{{item.nome.toLowerCase()}}.svg" alt="{{item.nome}}-logo" />
+      <p>{{item.nome.toLocaleUpperCase()}}</p>
     </a>
   </li>
-  <li class="skill-card">
-    <a href="#">
-      <img src="assets/icons/js-brands.svg" alt="javascript-LOGO" />
-      <p>JavaScript</p>
-    </a>
-  </li>
-  <li class="skill-card">
-    <a href="#">
-      <img src="assets/icons/java-brands.svg" alt="JAVA-LOGO" />
-      <p>Java</p>
-    </a>
-  </li>
+  } @empty {
+    <li>Not Found</li>
+  }
 </ul>

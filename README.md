@@ -52,8 +52,6 @@ A estrutura principal do projeto é organizada da seguinte forma:
 src/
 ├── app/
 │   ├── components/    # Componentes reutilizáveis
-│   ├── services/      # Serviços para lógica de negócios
-│   ├── models/        # Modelos de dados
 │   └── app.module.ts  # Módulo principal
 ├── assets/            # Arquivos estáticos (imagens, fontes, etc.)
 ├── environments/      # Configurações de ambiente
@@ -83,24 +81,6 @@ ng build
 ```
 
 Os artefatos de build serão armazenados no diretório `dist/`. Por padrão, o build de produção otimiza a aplicação para desempenho e velocidade.
-
-## Testes Unitários
-
-Para executar os testes unitários com o [Karma](https://karma-runner.github.io), utilize o comando:
-
-```bash
-ng test
-```
-
-## Testes End-to-End
-
-Para testes end-to-end (e2e), execute:
-
-```bash
-ng e2e
-```
-
-> **Nota:** O Angular CLI não inclui um framework de testes e2e por padrão. Escolha um que atenda às suas necessidades, como [Cypress](https://www.cypress.io/) ou [Protractor](https://www.protractortest.org/).
 
 ## Recursos Adicionais
 
