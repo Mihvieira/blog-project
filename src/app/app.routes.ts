@@ -9,11 +9,11 @@ const resolvedChildATitle: ResolveFn<string> = () =>
 export const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
+    component: MainComponent,
   },
   {
-        path: 'article-page/:id',
-        title: resolvedChildATitle,
-        component: ArticlePageComponent,
-    },
+    path: 'article-page/:id',
+    title: resolvedChildATitle,
+    component: ArticlePageComponent,
+  },
 ];
